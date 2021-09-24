@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-left: 40px;
+}
+
+.burger{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid black 2px;
+    width: 50px;
+    height: 50px;
+    margin-right: 40px;
+    border-radius: 10px;
+    z-index: 1000;
+    
+}
+
+.salade{
+    width: 40px;
+    height: 5px;
+    border: black solid 2px;
+    border-radius: 70px;
+    background-color: black;
+    margin: 2px;  
+    
+}
+
+.listeMenu{
+    transition: right linear 0.7s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(185, 171, 171);
+    height: 100vh;
+    border-radius: 50% 0 0 60%;
+    position: fixed;
+    right: -300px;
+   
+
+}
+
+.listeMenu.show {
+    right:0;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
+    background-color: #b215;
+    height: 120px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: -70px;
+    height: 100%;
+    width: 310px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+.listeMenu a {
+    margin: 50px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+
